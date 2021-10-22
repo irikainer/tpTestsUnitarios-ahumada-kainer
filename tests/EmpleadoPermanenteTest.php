@@ -30,7 +30,7 @@ class EmpleadoPermanenteTest extends EmpleadoTest
     public function testSePuedeCrearYCalcularAntiguedad(){
       $d = new DateTime('2006-06-19');
       $e = $this->crear("Kevin", "Ahumada", "12345678", "50000", $d);
-      $this->assertEquals("15", $e->calcularAntiguedad());
+      $this->assertEquals("14", $e->calcularAntiguedad());
     }
 
     public function testSePuedeCrearSinFechaIngreso() {
